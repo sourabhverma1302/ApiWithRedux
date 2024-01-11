@@ -13,7 +13,7 @@ const Home = () => {
     onSubmit: values => {
       console.log("hello",values.name);
       const sendData=async()=>{
-        await axios.post(`https://mynewapp-ynzu.onrender.com/addUser`,{
+        await axios.post(`https://localhost:8000/addUser`,{
         name:values.name,
         age:values.age,
         gender:values.gender,
